@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        dockerfile {  }
+        dockerfile { }
     }
     stages {
         stage('Hello GitHub') {
