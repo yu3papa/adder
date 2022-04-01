@@ -1,9 +1,13 @@
 pipeline {
     agent {
-        dockerfile {
-        }
+        dockerfile {  }
     }
     stages {
+        stage('Hello GitHub') {
+            steps {
+                echo "Hello GitHub!"
+            }
+        }
         stage('Compile') {
             steps {
                 sh 'python3 -m compileall adder.py'
